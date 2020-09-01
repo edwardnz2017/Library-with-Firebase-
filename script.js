@@ -122,14 +122,6 @@ const toggleReadFirestore = (id) => {
       }
     });
 };
-let myLibrary = []; //This will store the book information that is added by the user.
-
-function Book(name, author, pages, status) {
-  this.name = name;
-  this.author = author;
-  this.pages = pages;
-  this.status = status;
-}
 
 //Event listener for submit button, which will transfer inputted information to addBookToLibrary
 const submitBtn = document.querySelector('.submit-btn');
@@ -161,23 +153,5 @@ function addBookToLibrary() {
 }
 
 const catalogue = document.querySelector('.catalogue');
-
-//This adds an event to the Toggle Read button, which will change the read status
-function togRead() {
-  let toggle = document.querySelectorAll('.toggle-btn');
-  toggle.forEach((button) => {
-    if (button.classList.contains('eventOn')) {
-      return;
-    }
-    button.classList.add('eventOn');
-    button.addEventListener('click', (e) => {
-      Book.prototype.changeReadStatus = function () {
-        this.status = this.status === 'Read' ? 'Not read yet' : 'Read';
-      };
-      myLibrary[e.srcElement.id].changeReadStatus();
-      render();
-    });
-  });
-}
 
 loadBook();
