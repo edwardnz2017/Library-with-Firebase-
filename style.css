@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    background: url(library.jpg);
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(91, 30, 225, 0.5);
+}
+.input-box {
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: solid 1px grey;
+    outline: none;
+}
+.input-radio {
+    font-size: 15px;
+    color: white;
+}
+.submit-btn {
+    background:white;
+    height: 30px;
+    width: 140px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+    color: rgba(91, 30, 225, 0.7);
+    border: none;
+    margin: 5px 0;
+}
+h1 {
+    font-family: 'Prata', serif;
+    font-weight: bold;
+    font-size: 50px;
+    margin: 10px 0;
+    color: white;
+}
+button:active {
+    transform: translateY(1px);
+}
+button:hover {
+    background-color: rgba(91, 30, 225, 0.5);
+    color: white;
+}
+.bookDiv {
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(91, 30, 225, 0.5);
+    height: 300px;
+    width: 190px;
+    margin: 5px;
+    color: white;
+}
+.catalogue {
+    display: flex;
+    flex-wrap: wrap;
+}
+.radio-div {
+    margin: 5px 0;
+}
+.divButton {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: rgba(91, 30, 225, 0.7);
+    margin: 2px;
+    width: 90px;
+    height: 20px;
+    background-color: white;
+}
+.bookFoot {
+    position: absolute;
+    bottom: 0;
+}
+.bookTitle {
+    font-family: 'Prata', serif;
+    font-weight: bold;
+    border-bottom: solid 1px rgba(91, 30, 225, 0.7);
+    font-size: 27px;
+}
+.bookAuthor {
+    font-weight: bold;
+    border-bottom: solid 1px rgba(91, 30, 225, 0.7);
+    font-size: 18px;
+}

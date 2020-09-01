@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>MY LIBRARY</h1>
+      <div class="user-options">
+        <form action="">
+          <input
+            type="text"
+            placeholder="Book Name"
+            id="book-name"
+            class="input-box"
+          />
+          <input
+            type="text"
+            placeholder="Author Name"
+            id="author-name"
+            class="input-box"
+          />
+          <input
+            type="number"
+            placeholder="Pages"
+            id="pages"
+            class="input-box"
+          />
+          <div class="radio-div">
+            <label for="read" class="input-radio">
+              <input type="radio" id="read" name="read-status" />Read
+            </label>
+            <label for="not-read-yet" class="input-radio">
+              <input type="radio" id="not-read-yet" name="read-status" />Not
+              Read Yet
+            </label>
+          </div>
+          <button class="submit-btn" value="submit" type="submit">
+            Submit
+          </button>
+        </form>
+      </div>
+    </header>
+    <main>
+      <div class="catalogue"></div>
+    </main>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
