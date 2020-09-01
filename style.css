@@ -5,6 +5,7 @@ body {
   font-weight: 300;
   background: url(library.jpg);
   background-repeat: no-repeat;
+  background-size: contain;
   margin: 0px;
   padding: 0px;
 }
